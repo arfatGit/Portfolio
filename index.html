@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing Page by Code4education</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/Logo_Personal (3).png" class="img-fluid" alt="logo"/>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse alighn-items-center justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="px-5 py-4 mt-3 ms-3 shadow main-btn primary-btn" href="#contactme">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar section exit -->
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+      <div class="row">
+        <div
+          class="col-lg-7 order-lg-1 order-2 banner-content justify-content-center"
+        >
+          <div id="banner-col-1" class="container">
+            <h1 class="banner-title">I'm Developer Md Arfatul Alam</h1>
+            <!-- <h1 class="banner-title">Md Arfatul Alam</h1> -->
+            <!-- <h5 class="text-uppercase">senior Frontend Designer</h5> -->
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              veniam dignissimos error quia ipsam quos rem magni dolores
+              doloribus.
+            </p>
+            <div class="mt-5">
+              <a class="main-btn primary-btn" href="#">Hire Me</a>
+              <a class="main-btn secondary-btn ms-2" href="#">Get CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 order-lg-2 order-1 text-start">
+          <div class="">
+            <img src="images/3av.webp" width="100%" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner section exit -->
+
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-4 mb-lg-0 text-center">
+            <img
+              src="images/5av.webp"
+              width="80%"
+              class="img-fluid"
+              alt="About Us"
+            />
+          </div>
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <!-- ////About Me Tab Start//////////////////////////////////////////////////////////////////// -->
+            <div class="row">
+              <ul class="nav nav-pills justify-content-start">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    id="aboutMe-tab"
+                    type="button"
+                    data-bs-target="#aboutMe"
+                    role="tab"
+                    aria-controls="aboutMe"
+                    aria-selected="true"
+                  >
+                    About Me
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    id="skills-tab"
+                    type="button"
+                    data-bs-target="#skills"
+                    role="tab"
+                    aria-controls="skills"
+                    aria-selected="true"
+                    onclick="move()"
+                  >
+                    Skills
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    id="exp-tab"
+                    type="button"
+                    data-bs-target="#exp"
+                    role="tab"
+                    aria-controls="exp"
+                    aria-selected="true"
+                  >
+                    Experience
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- About Tab-Contents -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active ps-1"
+                role="tabpanel"
+                id="aboutMe"
+                aria-labelledby="aboutMe-tab"
+              >
+                <h2>My Story</h2>
+                <p class="">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae veniam dignissimos error quia ipsam quos rem magni
+                  dolores doloribus.
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae veniam dignissimos error quia ipsam quos rem magni
+                  dolores doloribus. Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Beatae veniam dignissimos error quia ipsam
+                  quos rem magni dolores doloribus.
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae veniam dignissimos error quia ipsam quos rem magni
+                  dolores doloribus.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade show ps-1"
+                role="tabpanel"
+                id="skills"
+                aria-labelledby="skills-tab"
+              >
+                <h2 class="mb-2">Skills</h2>
+                <p class="mb-2">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae veniam dignissimos error quia ipsam quos rem magni
+                  dolores doloribus.
+                </p>
+                <div class="row">
+                  <div class="col pt-4">
+                    <p class="skillTitle">
+                      HTML &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+
+                      <span class="prog">90%</span>
+                    </p>
+
+                    <div class="myProgress">
+                      <div class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      CSS &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+
+                      <span class="prog"> 80%</span>
+                    </p>
+                    <div class="myProgress">
+                      <div id="cssbar" class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      Bootstrap &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
+                      <span class="prog">60%</span>
+                    </p>
+
+                    <div class="myProgress">
+                      <div id="bootbar" class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      JavaScript &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      <span class="prog"> 70%</span>
+                    </p>
+                    <div class="myProgress">
+                      <div id="jsbar" class="bar"></div>
+                    </div>
+                  </div>
+                  <div class="col pt-4">
+                    <p class="skillTitle">
+                      Figma &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+
+                      <span class="prog">50%</span>
+                    </p>
+
+                    <div class="myProgress">
+                      <div id="figbar" class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      Node.js &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+
+                      <span class="prog"> 60%</span>
+                    </p>
+                    <div class="myProgress">
+                      <div id="nodebar" class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      Python &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace; &NonBreakingSpace;
+                      <span class="prog">50%</span>
+                    </p>
+
+                    <div class="myProgress">
+                      <div id="pybar" class="bar"></div>
+                    </div>
+                    <br />
+                    <p class="skillTitle">
+                      Database &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+                      &NonBreakingSpace;&NonBreakingSpace;
+
+                      <span class="prog"> 80%</span>
+                    </p>
+                    <div class="myProgress">
+                      <div id="dbbar" class="bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade show ps-1"
+                role="tabpanel"
+                id="exp"
+                aria-labelledby="exp-tab"
+              >
+                <div class="row">
+                  <div class="experience-content">
+                    <h5>Web Developer Intern</h5>
+                    <p class="exp-detail">
+                      2022-2022 &NonBreakingSpace;
+                      <i class="fa-solid fa-location-dot"></i>
+                      &NonBreakingSpace;<span class="comp-name">KidoCode</span>
+                    </p>
+                    <p class="exp-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione. Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione.
+                    </p>
+                    </p>
+                  </div>
+                  <div class="experience-content">
+                    <h5>Web Developer Intern</h5>
+                    <p class="exp-detail">
+                      2022-2022 &NonBreakingSpace;
+                      <i class="fa-solid fa-location-dot"></i>
+                      &NonBreakingSpace;<span class="comp-name">KidoCode</span>
+                    </p>
+                    <p class="exp-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione. Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione.
+                    </p>
+                    </p>
+                  </div>
+                  <div class="experience-content">
+                    <h5>Web Developer Intern</h5>
+                    <p class="exp-detail">
+                      2022-2022 &NonBreakingSpace;
+                      <i class="fa-solid fa-location-dot"></i>
+                      &NonBreakingSpace;<span class="comp-name">KidoCode</span>
+                    </p>
+                    <p class="exp-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione. Quibusdam animi nemo velit quaerat eius inventore officiis
+                      ratione.
+                    </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- /////About Me Tab End/////////////////////////////////////////////////////////////////////////////// -->
+            <!-- <div class="container">
+              <p class="text-uppercase">About me</p>
+              <h3 class="text-uppercase">Personal Details</h3>
+              <p class="pt-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                veniam dignissimos error quia ipsam quos rem magni dolores
+                doloribus.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                veniam dignissimos error quia ipsam quos rem magni dolores
+                doloribus. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Beatae veniam dignissimos error quia ipsam quos rem magni
+                dolores doloribus.
+              </p>
+              <a href="#" class="main-btn primary-btn mt-4">Download CV</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- Carousel Slider for courses -->
+        <div class="container text-center mt-5 pt-5">
+          <!-- <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2> -->
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="recipeCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="single-logo-item border-0">
+                      <img
+                        src="images/gadang-logo.png"
+                        class="img-fluid"
+                        width="28%"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="single-logo-item border-0">
+                      <img
+                        src="images/kidocode-logo.png"
+                        class="img-fluid"
+                        width="70%"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="single-logo-item border-0">
+                      <img
+                        src="images/UCSI-logo-red.png"
+                        class="img-fluid"
+                        width="70%"
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="single-logo-item border-0">
+                      <img
+                        src="images/BRAC_logo.png"
+                        class="img-fluid"
+                        width="50%"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="single-logo-item border-0">
+                      <img
+                        src="images/universal-logo.png"
+                        class="img-fluid"
+                        width="65%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <a
+                class="carousel-control-prev bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next bg-transparent w-aut"
+                href="#recipeCarousel"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </a> -->
+            </div>
+          </div>
+         
+        </div>
+
+        <!-------------------------------------------------------------------------->
+
+        <!-- <div class="row justify-content-center pt-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo1.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo2.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo3.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo4.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo5.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo6.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo7.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo8.webp" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-4">
+                <div class="single-logo-item">
+                  <img src="images/client-img/logo9.webp" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="offset-lg-2 col-lg-4 col-md-10">
+            <div class="client-info">
+              <div class="d-flex">
+                <span class="large">10</span>
+                <span class="smll">Years <br />Experience <br />Working</span>
+              </div>
+              <div class="call-now d-flex py-4">
+                <div>
+                  <span class="fa fa-phone-alt"></span>
+                </div>
+                <div class="ms-4">
+                  <p>call us now</p>
+                  <h5>(+1)-800-555-6789</h5>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- About section exit -->
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <span class="subheading">Services</span>
+            <h2 class="text-center">This is My Expertise, The <br> Services I'll Provide My Clients</h2>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card text-center py-5 px-3">
+              <div>
+                <img src="./images/services-img/ui-ux-design.png" width="60%" />
+              </div>
+              <h5 class="text-uppercase mt-4 mb-3">UI/UX DESIGN</h5>
+              <p>
+                Creeping for female light years that lesser can't evening heaven
+                isn't bearing tree
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card text-center py-5 px-3">
+              <div>
+                <img
+                  src="./images/services-img/web-development-image-01.png"
+                  width="41%"
+                />
+              </div>
+              <h5 class="text-uppercase mt-4 mb-3">Frontend DEV</h5>
+              <p>
+                Creeping for female light years that lesser can't evening heaven
+                isn't bearing tree
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card text-center py-5 px-3">
+              <div>
+                <img
+                  src="./images/services-img/0_0L6bzf0M37RvIDq5.png"
+                  width="65%"
+                />
+              </div>
+              <h5 class="text-uppercase mt-4 mb-3">Backend DEV</h5>
+              <p>
+                Creeping for female light years that lesser can't evening heaven
+                isn't bearing tree
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card text-center py-5 px-3">
+              <span>
+                <div>
+                  <img
+                    src="./images/services-img/mobile-app-development-technologies.png"
+                    width="51%"
+                  />
+                </div>
+                <h5 class="text-uppercase mt-4 mb-3">Mobile App Dev</h5>
+                <p>
+                  Creeping for female light years that lesser can't evening
+                  heaven isn't bearing tree
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-secondary"><strong>Have any works you want to done by me? <a href="#">Contact Me</a></strong></p>
+      <p class="exp-desc text-center">Far far away, behind the word mountains, far from the countries Vokalia <br> and Consonantia, there live the blind texts.</p>
+    </section>
+    <!--Services section exit -->
+
+    <!-- portfolio Section -->
+    <section id="portfolio" class="portfolio_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-md-5 mb-2">
+            <span class="subheading">Portfolio</span>
+            <h2 class="text-center">My Latest Work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+            <!-- <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-one-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-one"
+                type="button"
+                role="tab"
+                aria-controls="pills-one"
+                aria-selected="true"
+              >
+                Popular
+              </button>
+            </li> -->
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-three-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-three"
+                type="button"
+                role="tab"
+                aria-controls="pills-three"
+                aria-selected="true"
+              >
+                Upcoming
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-two-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-two"
+                type="button"
+                role="tab"
+                aria-controls="pills-two"
+                aria-selected="true"
+              >
+                Latest
+              </button>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- <div
+              class="tab-pane fade show active"
+              id="pills-one"
+              role="tabpanel"
+              aria-labelledby="pills-one-tab"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portfolio1.webp"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                  </div>
+                  <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                  <p>Animated, portfolio</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="card shadow">
+                    <div class="container">
+                      <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portfolio2.webp"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                  </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                  <p>Animated, portfolio</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portfolio3.webp"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                  </div>
+                  <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                  <p>Animated, portfolio</p>
+                </div>
+              </div>
+            </div> -->
+            
+            <div
+              class="tab-pane fade show active"
+              id="pills-three"
+              role="tabpanel"
+              aria-labelledby="pills-three-tab"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="card shadow">
+                    <div class="container">
+                      <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf.png"
+                      class="img-fluid w-100 border"
+                    />
+                    <div class="overlay">
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <h5 class="mb-0 mt-4">Dashboard Project</h5>
+                  <p>Responsive, Light Theme</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="card shadow">
+                    <div class="container">
+                      <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf1.png"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay">
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <h5 class="mb-0 mt-4">Personal Dashboard Project</h5>
+                  <p>Responsive, Gradient Theme</p>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="card shadow">
+                    <div class="container">
+                       <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf2.png"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay">
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                  
+                 
+                  <h5 class="mb-0 mt-4">Personal Project</h5>
+                  <p>Responsive, Dark Theme</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-two"
+              role="tabpanel"
+              aria-labelledby="pills-two-tab"
+            >
+              <div class="row">
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+                <!-- <div class="col-lg-4 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portfolio5.webp"
+                      class="img-fluid w-100"
+                    />
+                    <div class="overlay">
+                      
+                    </div>
+                  </div>
+                  <h5 class="mb-0 mt-4">MINIMAL DESIGN</h5>
+                  <p>Animated, portfolio</p>
+                </div> -->
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                  <div class="portfolio-img">
+                    <img
+                      src="./images/portfolio/portf3.jpg"
+                      class="img-fluid"
+                    />
+                    <div class="overlay">
+                      
+                      <i class="fa-solid fa-maximize"></i>
+                    </div>
+                  </div>
+                  <!-- <h5 class="mb-0 mt-4">Portfolio Project</h5>
+                  <p>Animated, portfolio</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio Section exit -->
+    <footer id="contactme" class="contct mt-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-6 img-fluid px-4 py-5">
+            <div>
+              <h3 class="text-left text-white ps-5 py-5">Don't hesitate to contact <br> i'm available</h3>
+            </div>          
+          </div>
+          <div class="col-6 ps-5">
+            <div class="container pt-4 ps-5">
+              <div class="input-group mb-3 mt-5 pt-5">
+              <input type="text" class="form-control shadow-1 text-dark" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="main-btn secondary-btn text-center text-white border" id="basic-addon2">Contact</span>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- blog Section -->
+    <section id="blog" class="blog_wrapper">
+      <div class="container">
+        <div class="row">
+          
+            <div class="col-sm-12 text-center mb-md-5 mb-2">
+              <span class="subheading">Articles</span>
+              <h2 class="text-center">My Articles</h2>
+            </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+        
+      </div>
+      </div>
+
+      <!-- More article -->
+      <div id="morearticle"class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="card rounded-0 border">
+              <img src="./images/blog/blog.webp" />
+
+              <!-- <div class="blog_details">
+                <div class="blog_text text-center">
+                  <h5 class="text-white mb-0">Social Life</h5>
+                  <div class="border_line"></div>
+                  <p class="text-white">Enjoy your social life together</p>
+                </div>
+              </div> -->
+              <br>
+              <h6 class="text-center text-dark"><strong> How to choose suitable Database for project?</strong></h6>
+              <div class="container justify-content-center">
+                 <p class="lh-sm fs-sm">Lorem ipsum dolor jhjffk kfkkf kfk mfnf sit amet conseccing elit. Minus assumenda pariatur quam quas quae, libero odio non veritatis. Adipisci</p>
+              </div>
+                <a id="artBtn"class="main-btn secondary-btn text-center border-0 rounded-0 py-3" href="#">Read more</a>
+          
+            </div>
+          </div>
+        
+      </div>
+      </div>
+      <div class="container text-center">
+        <button id="moreartBtn"class="main-btn secondary-btn border-0 text-center py-3" onclick="arcticles()">Show more <i class="fa-solid fa-arrow-down"></i></button>
+      </div>
+    </section>
+    <!-- blog Section exit -->
+
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-12 newsletter img-fluid text-center px-4">
+            <div>
+              <h3 class="text-white">get update from anywhere</h3>
+              <p class="text-white">
+                Bearing Void gathering light light his eavening unto dont
+                afraid.
+              </p>
+
+              <form class="row g-3 justify-content-center mt-4">
+                <div class="col col-sm-6 col-lg-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                </div>
+                <div class="col col-auto">
+                  <button
+                    type="submit"
+                    class="main-btn secondary-btn border-white mb-3"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <footer id="foot" class="contct">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 text-center">
+            <div class="footer-logo mb-3 mb-md-0">
+              <img src="images/Logo_Personal (3).png" />
+            </div>
+            <div class="my-4 social-icons text-white">
+              <h5>Follow Me</h5>
+              <ul
+                class="list-unstyled d-flex justify-content-center align-items-center"
+              >
+                <li>
+                  <a href="#"><i class="fab fa-facebook ic"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter ic"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram ic"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube ic"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <p class="footer-text text-center text-white my-2">
+              Copyright © 2022 All rights reserved | This template is made with
+              <i class="far fa-heart text-warning"></i> by <a href="#"><strong class="text-warning"> Arfat</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
