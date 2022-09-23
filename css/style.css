@@ -37,7 +37,7 @@ body {
   font-family: var(--secondary-font);
   width: 100%;
   background-color: var(--bg-white);
-  background-image: url("../images/body-bg.png.webp");
+  background-image: url("../images/body-bg.webp");
   background-repeat: no-repeat;
 }
 
