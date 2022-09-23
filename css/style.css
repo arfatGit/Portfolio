@@ -466,7 +466,6 @@ p {
 
 /* Carousel Slider End */
 
-
 /* 5 Services */
 
 .services_wrapper .card {
@@ -693,6 +692,9 @@ p {
 }
 #foot {
   background: #080827;
+}
+#contact {
+  padding-bottom: 0px;
 }
 
 /*Responsive Design*/
